@@ -16,7 +16,7 @@ Create a bone with vPython
 
     osso.generate()
     
->See an [example](sample.py)
+*See an [example](sample.py)*
 
 # Result
 
