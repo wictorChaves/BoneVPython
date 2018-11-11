@@ -7,8 +7,8 @@ height = 0
 width = 0
 
 size = 12
-radius = (size * 0.1)/2
 
+#Ball red of center
 sphere(pos=vector(0, 0, -1),
        radius=1,
        color=color.red)
