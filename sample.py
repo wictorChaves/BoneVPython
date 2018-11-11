@@ -3,21 +3,23 @@ from visual import *
 from Bone import Bone
 
 size = 12
-
-length = 0
 height = 0
-width = 0
+width = 10
+vertical = 1
+horizontal = 20
 
-#Create a instance with your size
-osso = Bone(size)
+# Create a instance with your size
+osso = Bone()
 
-#Define your vector with length, height and width
-osso.setVector(1, height, width)
+# Set configs
+osso.setSize(size)
+osso.setPos(width, height)
+osso.rotate(vertical, horizontal)
 
-#And generate
+# And generate
 osso.generate()
 
-#To help, create a redpoint of reference
+# To help, create a redpoint of reference
 sphere(pos=vector(0, 0, -1),
        radius=1,
        color=color.red)
