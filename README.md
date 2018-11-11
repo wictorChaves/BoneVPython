@@ -4,13 +4,21 @@ Create a bone with vPython
 
 # How to use
 
-**Create a instance with your size**
+**Create a instance**
 
-    osso = Bone(12)
+    osso = Bone()
     
-**Define your vector with length, height and width**
+**Define your size**
 
-    osso.setVector(1, 0, 0)
+    osso.setSize(size)
+    
+**Define your width and height**
+
+    osso.setPos(width, height)
+
+**Define your vertical and horizontal position**
+
+    osso.rotate(vertical, horizontal)
     
 **And generate**
 
