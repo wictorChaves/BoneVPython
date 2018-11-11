@@ -9,10 +9,10 @@ width = 0
 size = 12
 radius = (size * 0.1)/2
 
-sphere(pos=vector(0, 0, 10),
+sphere(pos=vector(0, 0, -1),
        radius=1,
        color=color.red)
 
 osso = Bone(size)
-osso.setVector(length, height, width)
+osso.setVector(1, height, width)
 osso.generate()

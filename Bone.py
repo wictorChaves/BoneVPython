@@ -30,17 +30,19 @@ class Bone():
              radius=self.radius - (self.radius * 0.2))
 
     def edgeLeft(self):
-        sphere(pos=vector(self.length + 2, self.height + 0.1, self.width),
-               radius=self.radius)
+        size = self.length
+        sphere(pos=vector(size, self.radius * 0.5, self.width),
+               radius=self.radius + (self.radius * 0.1))
 
-        sphere(pos=vector(self.length + 1.2, self.height + -0.4, self.width),
+        sphere(pos=vector(size + (self.radius * 0.5),  self.radius * -0.2, self.width),
                radius=self.radius)
 
     def edgeRight(self):
-        sphere(pos=vector(self.length + self.size, self.height + 0.1, self.width),
+        size = (self.length + self.size)
+        sphere(pos=vector(size, self.radius * 0.3, self.width),
                radius=self.radius)
 
-        sphere(pos=vector(self.length + self.size + 0.5, self.height + -0.4, self.width),
+        sphere(pos=vector(size + (size * 0.025), self.radius * -0.4, self.width),
                radius=self.radius)
 
     def generate(self):
