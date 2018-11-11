@@ -2,3 +2,4 @@
 .idea/*
 $RECYCLE.BIN/
 Thumbs.db
+*.pyc
